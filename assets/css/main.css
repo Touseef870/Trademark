@@ -81,7 +81,7 @@ header {
 
 .menu-unique li a {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1rem;
     color: #333;
     text-decoration: none;
     padding: 10px 15px;
@@ -122,6 +122,7 @@ header {
     left: 0;
     display: none;
     list-style: none;
+    width: 20rem;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
@@ -136,13 +137,58 @@ header {
     padding: 1rem 3rem;
     color: #333;
     display: block;
+    border-bottom: 1px solid black;
     text-decoration: none !important;
+}
+.sub-menu-unique li:last-child a{
+    border-bottom: none;
 }
 
 .sub-menu-unique li a:hover {
     background-color: #FF6F00;
     color: #fff;
 }
+
+/* Dropdown Menu */
+.dropdown-unique {
+    position: relative;
+}
+
+.haed-menu-unique {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    width: 20rem;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-unique:hover .haed-menu-unique {
+    display: block;
+}
+
+.haed-menu-unique li a {
+    /* padding: 0.5rem 3rem; */
+    padding-bottom: 0.3rem;
+    text-align: center;
+    color: #333;
+    display: block;
+    /* border-bottom: 1px solid black; */
+    text-decoration: none !important;
+}
+.haed-menu-unique li:last-child a{
+    border-bottom: none;
+}
+
+.haed-menu-unique li a:hover {
+    background-color: #FF6F00;
+    color: #fff;
+}
+
 
 /* Mobile Styles */
 .mobile-header-unique {
