@@ -3,14 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary-color: #232160;
-    --seconday-color: #1a1a1a;
-    --theme-color: #FF6F00;
-    --purple-color: #c0d0f4;
-    --body-font-family: 'Poppins', sans-serif;
-    --heading-family: 'Mont';
-    --section-pad: 5rem 0;
+    --primary-color: #1E90FF; /* Dark blue */
+    --secondary-color: #232160; /* Slightly darker blue */
+    --theme-color: #87CEEB; /* Sky blue */
+    --purple-color: #c0d0f4; /* Light purple (optional) */
+    --body-font-family: 'Poppins', sans-serif; /* Font family for body */
+    --heading-family: 'Mont'; /* Font family for headings */
+    --section-pad: 5rem 0; /* Padding for sections */
 }
+
 
 body {
     padding: 0;
