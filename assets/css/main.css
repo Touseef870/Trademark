@@ -507,6 +507,9 @@ p {
     .service-card-custom {
         padding: 20px;
     }
+    .our-services-section{
+        overflow: hidden;
+    }
 }
 
 
