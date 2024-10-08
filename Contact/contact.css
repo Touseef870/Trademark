@@ -243,7 +243,7 @@ header {
 }
 
 .mobile-menu-unique li {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 
 /* Responsive Styles */
@@ -270,17 +270,16 @@ header {
     .mobile-menu-unique {
         list-style: none;
         flex-direction: column;
-        /* gap: 20px; */
+        gap: 20px;
     }
 
     .mobile-menu-unique li a {
         color: #333;
-        padding: 0.5rem 0;
         text-decoration: none !important;
     }
 
     .mobile-menu-unique li a:hover {
-        color: #fff;
+        color: #3f97cf;
     }
 }
 
@@ -350,7 +349,7 @@ p {
 
 /* Example CSS for a gradient animation */
 .mainBanner {
-    background: url(../images/banner/bg-about.jpg);
+    background: url(../assets/images/banner/bg-banner.jpg);
     /* background-size: 300% 300%; */
     animation: backgroundAnimation 15s ease infinite;
 }
@@ -630,11 +629,6 @@ p {
 
 .price-rate {
     margin-bottom: 20px;
-    background-color: #3f97cf;
-    border-radius: 1.2rem;
-    text-align: center;
-    color: #fff;
-    padding: 1rem 0 ;
 }
 
 .price-rate h6 {
@@ -1126,4 +1120,291 @@ p {
 
 .popupform_cr .text-center {
     margin-top: 20px;
+}
+/* FAQ Section Styles */
+.about-section {
+    padding: 50px 0;
+}
+
+.faq-box {
+    background-color: #f9f9f9;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.faq-heading {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.faq-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Button Styles */
+.btn-outline-theme {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.btn-outline-theme:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-heading {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #007bff;
+    cursor: pointer;
+}
+.contact-section-modern {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.contact-wrapper-modern {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.contact-content-modern {
+    text-align: left;
+}
+
+.sub-head-modern {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-head-modern {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.theme-btn-modern {
+    background-color: #ff7a00;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn-modern:hover {
+    background-color: #e66b00;
+}
+
+.contact-form-modern {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-modern .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form-modern label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form-modern input, .contact-form-modern textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form-modern input:focus, .contact-form-modern textarea:focus {
+    outline: none;
+    border-color: #ff7a00;
+}
+
+.checkbox-label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.consent-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.theme-btn-modern {
+    background-color: #003366;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn-modern:hover {
+    background-color: #005bb5;
+}
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.about-section .main-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.about-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about-card .icon {
+    flex: 0 0 50px;
+    margin-right: 20px;
+}
+
+.about-card .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.about-card .card-content {
+    flex: 1;
+}
+
+.about-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.cta-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.theme-btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #005bb5;
+}
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5; /* Ensures good readability */
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.consent-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5; /* Good spacing between the lines */
+}
+
+.theme-btn-modern {
+    margin-top: 20px;
+    background-color: #003366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
