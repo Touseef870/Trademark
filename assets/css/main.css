@@ -639,7 +639,7 @@ p {
 
 .price-rate h6 {
     font-size: 2.5rem;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .price-features {
