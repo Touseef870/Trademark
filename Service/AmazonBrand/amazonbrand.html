@@ -482,6 +482,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
+          // Mobile Navbar
+          const menu_Bar = document.getElementById('menu-toggle-unique');
+        const mobileMenu = document.getElementById('mobile-nav-unique');
+        menu_Bar.addEventListener('click', () => {
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none'; // Hide the menu
+            } else {
+                mobileMenu.style.display = 'block'; // Show the menu
+            }
+        });
+
         // Pricing Modal
         function openModal(button) {
             const title = button.getAttribute('data-title');
