@@ -235,7 +235,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     position: absolute;
-    top: 17%;
+    top: 21%;
     /* Align just below the header */
     width: 50%;
     right: 0;
@@ -301,7 +301,7 @@ header {
     #mobile-nav-unique {
         display: none;
         width: 100%;
-        top: 18%;
+        top: 25%;
     }
 }
 
