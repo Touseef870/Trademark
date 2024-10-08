@@ -5,7 +5,7 @@
 :root {
     --primary-color: #232160;
     --seconday-color: #1a1a1a;
-    --theme-color: #FF6F00;
+    --theme-color: #3f97cf;
     --purple-color: #c0d0f4;
     --body-font-family: 'Poppins', sans-serif;
     --heading-family: 'Mont';
@@ -64,7 +64,8 @@ header {
 }
 
 .logo-unique img {
-    max-height: 60px;
+    max-height: 5rem;
+    border-radius: 100%;
 }
 
 .desktop-nav-unique {
@@ -91,11 +92,11 @@ header {
 
 .menu-unique li a:hover,
 .menu-unique li.active a {
-    color: #FF6F00;
+    color: #3f97cf;
 }
 
 .theme-btn-unique {
-    background: linear-gradient(90deg, #FF6F00, #FFA500);
+    background: linear-gradient(90deg, #009dff, #000);
     padding: 12px 25px;
     border-radius: 30px;
     color: #fff;
@@ -145,7 +146,7 @@ header {
 }
 
 .sub-menu-unique li a:hover {
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     color: #fff;
 }
 
@@ -185,7 +186,7 @@ header {
 }
 
 .haed-menu-unique li a:hover {
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     color: #fff;
 }
 
@@ -203,7 +204,7 @@ header {
 .menu-toggle-unique span {
     display: block;
     height: 4px;
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     margin-bottom: 5px;
 }
 
@@ -278,7 +279,7 @@ header {
     }
 
     .mobile-menu-unique li a:hover {
-        color: #FF6F00;
+        color: #3f97cf;
     }
 }
 
@@ -318,6 +319,9 @@ header {
     text-align: center;
     color: #fff;
 }
+.content p{
+    color: #dadada;
+}
 
 h1 {
     font-size: 3rem;
@@ -328,7 +332,7 @@ p {
 }
 
 .theme-btn {
-    background: #FF6F00;
+    background: #009dff;
     padding: 15px 30px;
     border-radius: 25px;
 }
@@ -389,8 +393,8 @@ p {
 }
 
 .btn-outline-theme {
-    border: 2px solid #FF6F00;
-    color: #FF6F00;
+    border: 2px solid #3f97cf;
+    color: #3f97cf;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -398,7 +402,7 @@ p {
 }
 
 .btn-outline-theme:hover {
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     color: white;
 }
 
@@ -437,7 +441,7 @@ p {
 
 .sub-head {
     font-size: 1.5rem;
-    color: #FF6F00;
+    color: #3f97cf;
     text-transform: uppercase;
 }
 
@@ -481,7 +485,7 @@ p {
 
 .btn-custom {
     padding: 10px 20px;
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
@@ -519,7 +523,7 @@ p {
 
 .sub-head {
     font-size: 1.5rem;
-    color: #FF6F00;
+    color: #3f97cf;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -532,7 +536,7 @@ p {
 }
 
 .exp-card-custom {
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
@@ -587,7 +591,7 @@ p {
 
 .sub-head {
     font-size: 1.5rem;
-    color: #FF6F00;
+    color: #3f97cf;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -604,7 +608,7 @@ p {
     padding: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid #FF6F00;
+    border: 2px solid #3f97cf;
 }
 
 .price-wrap-custom:hover {
@@ -647,17 +651,17 @@ p {
 }
 
 .theme-btn {
-    background-color: transparent;
-    color: #FF6F00;
+    background-color: white;
+    color: #0088ff;
     padding: 12px 20px;
-    border: 2px solid #FF6F00;
+    border: 2px solid #0088ff;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .theme-btn:hover {
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     color: white;
 }
 
@@ -824,7 +828,7 @@ p {
 }
 
 .theme-btn-modern {
-    background: linear-gradient(90deg, #FF6F00, #FFA500);
+    background: linear-gradient(90deg, #3f97cf, #000);
     padding: 15px 30px;
     color: #ffffff;
     border-radius: 30px;
@@ -909,8 +913,8 @@ p {
     flex: 1;
 }
 
-.footer-logo img {
-    max-width: 150px;
+.footer-logo span{
+   color: #3f97cf;
 }
 
 .footer-contact-info p {
@@ -923,7 +927,7 @@ p {
 }
 
 .footer-contact-info i {
-    color: #FF6F00;
+    color: #3f97cf;
     margin-right: 10px;
 }
 
@@ -941,7 +945,7 @@ p {
 
 .footer-links h5,
 .footer-services h5 {
-    color: #FF6F00;
+    color: #3f97cf;
     margin-bottom: 15px;
 }
 
@@ -965,7 +969,7 @@ p {
 
 .footer-links ul li a:hover,
 .footer-services ul li a:hover {
-    color: #FF6F00;
+    color: #3f97cf;
 }
 
 .footer-bottom {
@@ -992,7 +996,7 @@ p {
 }
 
 .footer-bottom ul li a {
-    color: #FF6F00;
+    color: #3f97cf;
     text-decoration: none;
 }
 
@@ -1041,14 +1045,14 @@ p {
     position: absolute;
     top: 15px;
     right: 15px;
-    color: #FF6F00;
+    color: #3f97cf;
     font-size: 24px;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .closePop:hover {
-    color: #FFA500;
+    color: #000;
 }
 
 .popup-content {
@@ -1057,7 +1061,7 @@ p {
 
 .popup-content h2 {
     font-size: 26px;
-    color: #FF6F00;
+    color: #3f97cf;
     margin-bottom: 15px;
     font-weight: bold;
     line-height: 1.3;
@@ -1085,7 +1089,7 @@ p {
 .popupform_cr input[type="text"]:focus,
 .popupform_cr input[type="email"]:focus,
 .popupform_cr input[type="tel"]:focus {
-    border-color: #FF6F00;
+    border-color: #3f97cf;
     box-shadow: 0 0 5px rgba(255, 111, 0, 0.5);
 }
 
@@ -1099,7 +1103,7 @@ p {
 }
 
 .popupform_cr input[type="submit"] {
-    background-color: #FF6F00;
+    background-color: #3f97cf;
     color: white;
     border: none;
     padding: 12px;
@@ -1110,7 +1114,7 @@ p {
 }
 
 .popupform_cr input[type="submit"]:hover {
-    background-color: #FFA500;
+    background-color: #000;
     transform: translateY(-3px);
 }
 

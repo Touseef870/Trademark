@@ -4,22 +4,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
-<base href="/" />
-
 <head>
-    <title>Expert Trademark Registration </title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Expert Trademark Registration </title>
     <meta name="description"
         content="Looking for a leading trademark agency in the USA? Look no further than Brandmark Forte. Contact us today!">
 
     <link rel="stylesheet" href="../assets/css/layout.css">
-    <link rel="stylesheet" href="../assets/css/about.css">k
-
+    <link rel="stylesheet" href="./about.css">
 
 
     <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -29,37 +27,60 @@
     <main class="wrapper">
         <!-- wrapper start -->
         <header>
-            <div class="top-hdr">
-                <div class="container">
-                    <ul class="top-hdr-cta">
-                        <li><a href="tel:+1 (855) 262-3292">Call : +1 (855) 262-3292</a></li>
+            <div class="top-header-unique">
+                <div class="container-unique">
+                    <ul class="top-header-cta-unique">
+                        <li><a href="tel:+1 (855) 262-3292">Call: +1 (855) 262-3292</a></li>
                         <li><a href="mailto:support@brandmarkforte.com">support@brandmarkforte.com</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="main-header">
-                <div class="container">
-                    <div class="menu-Bar" id="menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
+            <!-- Desktop Navbar -->
+            <div class="main-header-unique">
+                <div class="container-unique">
+                    <div class="logo-unique">
+                        <a href="./">
+                            <img src="../assets/images/logo.jpg" alt="Brandmark Logo">
+                        </a>
                     </div>
-                    <div class="row align-items-center">
-                        <div class="col-4 text-start">
-                            <a href="./" class="logo">
-                                <img src="/assets/images/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-8 text-end">
-                            <div class="menuWrap">
-                                <ul class="menu">
-                                    <li class="active"><a href="/">Home</a></li>
+                    <nav class="desktop-nav-unique">
+                        <ul class="menu-unique">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li style="cursor: pointer;" class="dropdown-unique">
+                                <a >Services <i class="fa-solid fa-chevron-down"> </i></a>
+                                <ul class="sub-menu-unique">
+                                    <li><a href="../Trademark-Registration/trademark-registration.html">Trademark Registration</a></li>
+                                    <li><a href="#">Copyright Registration</a></li>
+                                    <li><a href="/business-formation.php">Business Formation</a></li>
+                                    <li><a href="/amazon-brand.php">Amazon Brand Registry</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/faqs.php">FAQs</a></li>
+                            <li><a href="/contact-us.php">Contact Us</a></li>
+                        </ul>
+                        <a href="#" class="theme-btn-unique" onclick="setButtonURL();">Connect With Us</a>
+                    </nav>
+
+                    <!-- Mobile Navbar -->
+                    <div class="mobile-header-unique">
+                        <div class="container-unique">
+                            <div class="menu-toggle-unique" id="menu-toggle-unique">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav id="mobile-nav-unique">
+                                <ul class="mobile-menu-unique">
+                                    <li><a href="/">Home</a></li>
                                     <li><a href="/About/about.html">About Us</a></li>
-                                    <li class="dropdown"><a href="#">Services <i
-                                                class="fa-solid fa-chevron-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="/trademark-registration.php">Trademark Registration</a></li>
-                                            <li><a href="/copyright-registration.php">Copyright Registration</a></li>
+                                    <li style="cursor: pointer;" class="dropdown-unique">
+                                        <a >Services <i class="fa-solid fa-chevron-down"> </i></a>
+                                        <ul class="haed-menu-unique">
+                                            <li><a href="./Trademark-Registration/trademark-registration.html">Trademark
+                                                    Registration</a></li>
+                                            <li><a href="#">Copyright Registration</a></li>
                                             <li><a href="/business-formation.php">Business Formation</a></li>
                                             <li><a href="/amazon-brand.php">Amazon Brand Registry</a></li>
                                         </ul>
@@ -67,92 +88,78 @@
                                     <li><a href="/faqs.php">FAQs</a></li>
                                     <li><a href="/contact-us.php">Contact Us</a></li>
                                 </ul>
-                                <a href="#" class="theme-btn" target="_self" onclick="setButtonURL();">Connect With
-                                    Us</a>
-                            </div>
+                                <a href="#" class="theme-btn-unique">Connect With Us</a>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Responsive Navbar -->
-            <nav id="mainNavbar" class="navbar">
-                <ul class="navList">
-                    <li class="navItem"><a href="/" class="navLink">HOME</a></li>
-                    <li class="navItem"><a href="/About/about.html" class="navLink">ABOUT US</a></li>
-                    <li class="navItem">
-                        <select id="">
-                            <option value="">TRADEMARK RESGISTRATION</option>
-                        </select>
-                    </li>
-                    <li class="navItem"><a href="#contact" class="navLink">FAQs</a></li>
-                    <li class="navItem"><a href="#contact" class="navLink">CONTACT US</a></li>
-                    <a href="#" class="theme-btn">Connect With
-                        Us</a>
-                </ul>
-            </nav>
-
-            <div class="mobile-toggle-menu">
-
-            </div>
 
         </header>
 
+
+
+
+
         <!-- banner-sec -->
-        <section class="mainBanner" style="background-image:url(assets/images/banner/bg-about.jpg); ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 m-auto text-center wow fadeInDown" data-wow-delay="0.2s">
-                        <div class="mb_cnt">
-                            <h1>Your Trusted Trademark Partners in Success</h1>
-                            <p>At Brandmark Forte, our experienced team is dedicated to guiding you through the
-                                trademark process and protecting your unique assets. </p>
-                            <a href="javascript:;" class="theme-btn popBtn" data-title="Trademark Registration"
-                                data-price="$35" onclick="openModal(this);">Get Started</a>
-                        </div>
-                    </div>
-                </div>
+        <section class="mainBanner">
+            <div class="content">
+                <h1>Secure Your Trademark with Us!</h1>
+                <p>Your trusted partner in safeguarding your brand's identity across the USA.</p>
+                <a href="javascript:;" class="theme-btn popBtn" data-title="Trademark Registration" data-price="$35"
+                    onclick="openModal(this);">Get Started</a>
             </div>
         </section>
+
         <!-- banner-end -->
 
         <!-- About Section -->
-        <section class="abt-s1">
-            <div class="container-fluid p-0">
-                <div class="row align-items-center">
+        <!-- About Section -->
+        <section class="about-section" style="padding: 50px 0;">
+            <div class="container">
+                <h2 class="main-heading" style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">About Us
+                </h2>
+                <div class="row align-items-stretch">
                     <div class="col-md-6">
-                        <figure>
-                            <img src="assets/images/abt-s1.png" alt="">
+                        <figure class="image-main" style="margin: 0;">
+                            <img src="../assets/images/hm-abt-3.png" alt="Trademark Protection" class="img-fluid"
+                                style="width: 100%; height: 900px; object-fit: cover;" />
                         </figure>
                     </div>
-                    <div class="col-md-4">
-                        <div class="hm-abt-cnt">
-                            <h6 class="sub-head">Why Choose Us?</h6>
-                            <h2 class="main-head">Get Professional Registration Guidance and Assistance</h2>
-                            <p>We provide a full range of services to strengthen your brand identity. Our team of
-                                experts will guide you through the entire process, ensuring meticulous attention to
-                                detail and compliance with legal standards.</p>
-
-                            <ul class="hm-abt-list">
-                                <li>Prevent Infringements
-                                    <span>We conduct comprehensive searches and analyses to prevent infringements and
-                                        ensure the chosen mark is unique.</span>
-                                </li>
-                                <li>Rightful Ownership
-                                    <span>Our experts efficiently register your mark to strengthen your legal standing
-                                        and provide exclusive rights.</span>
-                                </li>
-
-                                <li>Protect from Disputes
-                                    <span>During the trademark registration process, we use strategic measures to
-                                        protect you from legal disputes.</span>
-                                </li>
-                                <li>Build Your Brand Identity
-                                    <span>We help establish a memorable and unique market presence for brand-building
-                                        and consumer recognition.</span>
-                                </li>
+                    <div class="col-md-6">
+                        <div class="about-content"
+                            style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+                            <h2 class="main-heading" style="font-size: 2rem; margin-bottom: 20px;">Your Partner in
+                                Trademark Success</h2>
+                            <p style="font-size: 1.2rem; line-height: 1.6;">
+                                At [Your Company Name], we specialize in safeguarding your intellectual property,
+                                ensuring you retain exclusive rights to your brand identity. Our dedicated team of
+                                trademark experts provides comprehensive trademark registration services tailored to
+                                meet your business needs.
+                            </p>
+                            <p style="font-size: 1.2rem; line-height: 1.6;">
+                                Navigating the complexities of trademark law can be daunting. That’s why we’re here to
+                                simplify the process. From initial trademark searches to filing and monitoring, we guide
+                                you every step of the way. Trust us to protect what matters most to your business.
+                            </p>
+                            <p style="font-size: 1.2rem; line-height: 1.6;">
+                                We are committed to delivering personalized service and expert legal guidance. Whether
+                                you are a startup looking to establish your brand or an established business needing to
+                                defend your intellectual property, we have the expertise to assist you. Our goal is to
+                                ensure that your trademark journey is seamless and efficient.
+                            </p>
+                            <ul class="about-list" style="font-size: 1.1rem; margin-top: 20px;">
+                                <li style="margin-bottom: 10px;"><i class="fa fa-check-circle"></i> Comprehensive
+                                    Trademark Services</li>
+                                <li style="margin-bottom: 10px;"><i class="fa fa-check-circle"></i> Expert Legal
+                                    Guidance</li>
+                                <li style="margin-bottom: 10px;"><i class="fa fa-check-circle"></i> Customized Solutions
+                                    for Every Business</li>
                             </ul>
-                            <a href="#" class="theme-btn" target="_self" onclick="setButtonURL();">Connect With Us</a>
+                            <a href="about.html" class="btn-outline-theme" style="background: transparent; border: 2px solid #007bff; color: #007bff; padding: 12px 18px; 
+                              border-radius: 5px; text-decoration: none; font-size: 1.1rem; margin-top: 20px;">Discover
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -161,69 +168,122 @@
 
 
 
-        <!-- Experiense Section -->
-        <section class="our-expertise">
+
+
+        <!-- Our Services Section -->
+        <section class="services-section">
             <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="exp-cnt">
-                            <h6 class="sub-head">Our Expertise</h6>
-                            <h2 class="main-head text-white">Reliable Trademark Registration Solutions</h2>
-                            <p>With over a decade of expertise, we are dedicated to safeguarding businesses from the
-                                risks of trademark infringement. </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div class="exp-box-wrap">
-                            <div class="row gy-4">
-                                <div class="col-md-6"></div>
-                                <div class="col-md-6 wow zoomIn" data-wow-delay="0.2s">
-                                    <div class="exp-box">
-                                        <h4>3k+</h4>
-                                        <h6>Trademarked Businesses</h6>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                                    <div class="exp-box">
-                                        <h4>1k+</h4>
-                                        <h6>Satisfied <br>
-                                            Clients</h6>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 wow zoomIn" data-wow-delay="0.4s">
-                                    <div class="exp-box">
-                                        <h4>800+</h4>
-                                        <h6>Trademarked <br>
-                                            Logos</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center mb-5">
+                    <h6 class="sub-head text-primary">Our Services</h6>
+                    <h2 class="main-head text-dark">What We Offer</h2>
+                    <p class="text-muted">At [Your Company Name], we provide comprehensive services to protect and
+                        manage your trademarks. Our dedicated team is here to guide you every step of the way.</p>
                 </div>
-            </div>
-            <div class="elem-exp wow fadeInLeft" data-wow-delay="0.4s">
-                <img src="assets/images/exp-elem.png" alt="">
-            </div>
-        </section>
-
-
-
-        <section class="cta-sec" style="background-image: url(assets/images/bg-cta.png); margin-bottom: rem;">
-            <div class="container">
                 <div class="row">
-                    <div class="col-md-9 text-center m-auto">
-                        <h2 class="main-head text-white wow fadeInDown" data-wow-delay="0.2s">No More Worries About
-                            Intellectual Property Infringements - Get Your Trademark Today!</h2>
-                        <div class="cta-btns wow fadeInDown" data-wow-delay="0.3s">
-                            <a href="javascript:;" class="theme-btn" target="_self">Connect With Us</a>
-                            <a href="javascript:;" class="theme-btn popBtn" data-title="Trademark Registration"
-                                data-price="$35" onclick="openModal(this);">Get Started Now</a>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Trademark Registration</h4>
+                            <p>Expert assistance in registering your trademarks to safeguard your brand identity.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h4>Trademark Monitoring</h4>
+                            <p>Continuous monitoring of your trademarks to ensure no one infringes on your rights.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4>Legal Support</h4>
+                            <p>Comprehensive legal support for trademark disputes and enforcement actions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Brand Strategy</h4>
+                            <p>Strategic advice on building and managing your brand effectively in the marketplace.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>Trademark Searches</h4>
+                            <p>Thorough searches to identify potential conflicts before filing your trademark.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4>International Protection</h4>
+                            <p>Assistance in securing international trademark protection for your global brand.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+        <!-- Expertise Section -->
+        <section class="expertise-section">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                        <h6 class="sub-head">Our Expertise</h6>
+                        <h2 class="main-head">Reliable Trademark Registration Solutions</h2>
+                        <p>With over a decade of expertise, we are dedicated to safeguarding businesses from the risks
+                            of trademark infringement.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="exp-card-custom">
+                            <h4>3k+</h4>
+                            <h6>Trademarked Businesses</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="exp-card-custom">
+                            <h4>1k+</h4>
+                            <h6>Satisfied Clients</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="exp-card-custom">
+                            <h4>800+</h4>
+                            <h6>Trademarked Logos</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
 
 
         <!-- Testimonial Section -->
@@ -315,94 +375,80 @@
 
 
         <!-- Contact Us -->
-        <section class="contact-hm">
+        <section class="contact-section-modern" style="background-image: url(../assets/images/contact-bg.jpg);">
+            <!-- <div class="overlay"></div> -->
             <div class="container">
-                <div class="contactWrap">
-                    <div class="row align-items-center justify-content-between">
+                <div class="contact-wrapper-modern">
+                    <div class="row gap-5 align-items-center justify-content-between">
                         <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.2s">
-                            <div class="contact-cnt">
-                                <h6 class="sub-head text-white">Contact Us</h6>
-                                <h2 class="main-head text-white">Protect Your Intellectual Property Today!</h2>
-                                <a href="javascript:;" class="theme-btn" target="_self"
-                                    onclick="setButtonURL();">Connect With
-                                    Us</a>
+                            <div class="contact-content-modern">
+                                <h6 class="sub-head-modern text-white">Contact Us</h6>
+                                <h2 class="main-head-modern text-white">Protect Your Intellectual Property Today!</h2>
+                                <a href="#" class="theme-btn-modern" target="_self" onclick="setButtonURL();">Connect
+                                    With Us</a>
                             </div>
                         </div>
                         <div class="col-md-6 wow fadeInDown" data-wow-delay="0.2s">
-                            <figure><img src="assets/images/contact-hm.png" alt=""></figure>
+                            <figure>
+                                <img src="../assets/images/contact-hm.png" alt="Contact Us Image"
+                                    class="contact-image-modern">
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- footer links -->
-        <footer style="background: url(/assets/images/bg-footer.png) center / cover no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="widget">
-                            <a href="/" class="logo">
-                                <img src="/assets/images/footerlogo.png" alt="">
-                            </a>
-                            <ul class="ft-nav social-links">
-                                <li><i class="far fa-phone fa-rotate-90"></i> <a href="tel:+1 (855) 262-3292">+1 (855)
-                                        262-3292</a></li>
-                                <li><i class="far fa-envelope"></i> <a
-                                        href="mailto:support@brandmarkforte.com">support@brandmarkforte.com</a></li>
-                                <li><i class="far fa-map-marker-alt"></i><a>800 Wilcrest Dr, Houston, TX 77042, USA</a>
-                                </li>
-                            </ul>
-                        </div>
+
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <h1> <span>TRADE</span>MARK </h1>
                     </div>
-                    <div class="col-md-3">
-                        <div class="widget">
-                            <h5>Quick Links</h5>
-                            <ul class="ft-nav">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about-us.php">About Us</a></li>
-                                <li><a href="/faqs.php">FAQs</a></li>
-                                <li><a href="/contact-us.php">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="widget">
-                            <h5>Services</h5>
-                            <ul class="ft-nav">
-                                <li><a href="/trademark-registration.php">Trademark Registration</a></li>
-                                <li><a href="/copyright-registration.php">Copyright Registration</a></li>
-                                <li><a href="/business-formation.php">Business Formation</a></li>
-                                <li><a href="/amazon-brand.php">Amazon Brand Registry</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="widget">
-                            <h5>Newsletter</h5>
-                            <span>Subscribe and get our latest news!</span>
-                            <div class="newsltr-inp">
-                                <form action="#" id="form4" class="js-recaptcha-form">
-                                    <input type="email" name="" id="" placeholder="Email here">
-                                    <input type="hidden" name="g-recaptcha-response">
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="footer-contact-info">
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+1 (855) 262-3292">+1 (855) 262-3292</a></p>
+                        <p><i class="fa-solid fa-envelope"></i> <a
+                                href="mailto:support@brandmarkforte.com">support@brandmarkforte.com</a></p>
+                        <p><i class="fa-solid fa-location-dot"></i> 800 Wilcrest Dr, Houston, TX 77042, USA</p>
                     </div>
                 </div>
-            </div>
-            <div class="copyright text-center">
-                <div class="container">
-                    <div class="cpWrap">
-                        <p>Copyright &copy; 2024 Brandmark Forte, LLC.</p>
-                        <ul class="ft-cp-list">
-                            <li><a href="/terms-and-conditions.php">Terms of Service</a></li>
-                            <li><a href="/privacy-policy.php">Privacy Policy</a></li>
+
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-us.php">About Us</a></li>
+                            <li><a href="/faqs.php">FAQs</a></li>
+                            <li><a href="/contact-us.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-services">
+                        <h5>Our Services</h5>
+                        <ul>
+                            <li><a href="/trademark-registration.php">Trademark Registration</a></li>
+                            <li><a href="/copyright-registration.php">Copyright Registration</a></li>
+                            <li><a href="/business-formation.php">Business Formation</a></li>
+                            <li><a href="/amazon-brand.php">Amazon Brand Registry</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Brandmark Forte, LLC. All rights reserved.</p>
+                <ul>
+                    <li><a href="/terms-and-conditions.php">Terms of Service</a></li>
+                    <li><a href="/privacy-policy.php">Privacy Policy</a></li>
+                </ul>
+            </div>
         </footer>
+
+
+
 
 
         <!-- <div class="overlay"></div>
@@ -418,7 +464,7 @@
 
 
 
-        <div class="black-layout" style=""></div>
+        <div class="black-layout"></div>
         <div style="display: none;" class="popupform popuptm" id="popupform_cr">
             <div class="modal-body">
                 <a id="formClose" class="closePop"><span>X</span></a>
@@ -430,16 +476,27 @@
                         class="popupform_cr js-recaptcha-form" id="form1">
                         <div class="row">
                             <div class="col-md-12">
-                                <input type="text" class="required cn_pn" required name="customer_full_name"
+                                <input type="text" class="required cn_pn" required="" name="customer_full_name"
                                     placeholder="Your Name">
                             </div>
                             <div class="col-md-12">
-                                <input type="email" class="required email" required name="customer_email"
+                                <input type="email" class="required email" required="" name="customer_email"
                                     placeholder="Your Email">
                             </div>
                             <div class="col-md-12">
-                                <input type="tel" class="required number ftpn" required name="customer_phone"
+                                <input type="tel" class="required number ftpn" required="" name="customer_phone"
                                     minlength="7" maxlength="14" placeholder="Your Phone">
+                                <input type="hidden" required="" name="leadsource" value="">
+                                <input type="hidden" name="source" id="" value="">
+                                <input type="hidden" name="gclid" id="" value="">
+                                <input type="hidden" name="msclkid" id="" value="">
+                                <input type="hidden" name="__utm_source" id="" value="">
+                                <input type="hidden" name="__utm_campaign" id="" value="">
+                                <input type="hidden" name="__utm_content" id="" value="">
+                                <input type="hidden" name="__utm_term" id="" value="">
+                                <input type="hidden" name="__device" id="" value="">
+                                <input type="hidden" name="__keyword" id="" value="">
+                                <input type="hidden" name="__matchtype" id="" value="">
                             </div>
                             <div class="col-md-12 text-center">
                                 <div class="checkbox-wrap">
@@ -460,15 +517,13 @@
                             </div>
                             <div class="col-md-12 text-center">
                                 <input type="hidden" name="g-recaptcha-response">
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="submit">
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
-
 
 
 
@@ -549,43 +604,19 @@
         <script src="https://kit.fontawesome.com/793f608188.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="../app.js"></script>
-
         <script>
+            const menu_Bar = document.getElementById('menu-toggle-unique');
+            const mobileMenu = document.getElementById('mobile-nav-unique');
 
-
-            // Function to handle form submission with reCAPTCHA validation
-            function handleFormSubmission(event, form) {
-                event.preventDefault(); // Prevent default form submission
-
-                var $form = $(form); // Convert form to jQuery object
-
-                // Execute reCAPTCHA
-                grecaptcha.ready(function () {
-                    grecaptcha.execute('6LcgqvwpAAAAAIXNvVWEAo0Yv4V33ouno3l2lVRN', { action: 'submit' }).then(function (token) {
-                        // Log the reCAPTCHA token to console (optional)
-                        console.log('reCAPTCHA token:', token);
-
-                        // Set the token in the hidden input field within the current form
-                        $form.find('input[name="g-recaptcha-response"]').val(token);
-
-                        // Compare token with the tokenFromInput
-                        var tokenFromInput = $form.find('input[name="g-recaptcha-response"]').val();
-
-                        if (token === tokenFromInput) {
-                            // Tokens match, submit the form programmatically
-                            $form.get(0).submit(); // Use native submit method of the form
-                        } else {
-                            // Tokens do not match, handle this according to your needs
-                            alert('reCAPTCHA verification failed. Please try again.');
-                            // Optionally, reset the reCAPTCHA widget
-                            grecaptcha.reset(); // Reset the reCAPTCHA widget
-                        }
-                    });
-                });
-            }
-
-            // Document ready function to attach event handlers
+            menu_Bar.addEventListener('click', () => {
+                if (mobileMenu.style.display === 'block') {
+                    mobileMenu.style.display = 'none'; // Hide the menu
+                } else {
+                    mobileMenu.style.display = 'block'; // Show the menu
+                }
+            });
+        </script>
+        <script>
             $(document).ready(function () {
                 // Event handler for form submission
                 $('.js-recaptcha-form').on('submit', function (event) {
@@ -615,6 +646,7 @@
 
             });
         </script>
+
         <style>
             .checkbox-wrap {
                 display: flex;
@@ -634,12 +666,6 @@
                 height: auto !important;
             }
         </style>
-
-        <!-- Start of Zendesk Widget script -->
-        <script id="ze-snippet"
-            src="https://static.zdassets.com/ekr/snippet.js?key=7be498fe-0fa8-4962-b584-9dd432333d42"> </script>
-        <!-- End of Zendesk Widget script -->
-
 
     </main>
 </body>

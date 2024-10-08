@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/registration.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <title>Trademark Registration Service</title>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- Header -->
+    <header>
+        <div class="top-header-unique">
+            <div class="container-unique">
+                <ul class="top-header-cta-unique">
+                    <li><a href="tel:+1 (855) 262-3292">Call: +1 (855) 262-3292</a></li>
+                    <li><a href="mailto:support@brandmarkforte.com">support@brandmarkforte.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-header-unique">
+            <div class="container-unique">
+                <div class="logo-unique">
+                    <a href="/">
+                        <img src="../assets/images/logo.jpg" alt="Brandmark Logo">
+                    </a>
+                </div>
+                <nav class="desktop-nav-unique">
+                    <ul class="menu-unique">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/About/about.html">About Us</a></li>
+                        <li style="cursor: pointer;" class="dropdown-unique">
+                            <a >Services <i class="fa-solid fa-chevron-down"> </i></a>
+                            <ul class="sub-menu-unique">
+                                <li><a href="./Trademark-Registration/trademark-registration.html">Trademark
+                                        Registration</a></li>
+                                <li><a href="#">Copyright Registration</a></li>
+                                <li><a href="/business-formation.php">Business Formation</a></li>
+                                <li><a href="/amazon-brand.php">Amazon Brand Registry</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/faqs.php">FAQs</a></li>
+                        <li><a href="/contact-us.php">Contact Us</a></li>
+                    </ul>
+                    <a href="#" class="theme-btn-unique" onclick="setButtonURL();">Connect With Us</a>
+                </nav>
+
+                <div class="mobile-header-unique">
+                    <div class="container-unique">
+                        <div class="menu-toggle-unique" id="menu-toggle-unique">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav id="mobile-nav-unique" style="display: none;">
+                            <ul class="mobile-menu-unique">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/About/about.html">About Us</a></li>
+                                <li style="cursor: pointer;" class="dropdown-unique">
+                                    <a >Services <i class="fa-solid fa-chevron-down"> </i></a>
+                                    <ul class="haed-menu-unique">
+                                        <li><a href="./Trademark-Registration/trademark-registration.html">Trademark
+                                                Registration</a></li>
+                                        <li><a href="#">Copyright Registration</a></li>
+                                        <li><a href="/business-formation.php">Business Formation</a></li>
+                                        <li><a href="/amazon-brand.php">Amazon Brand Registry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/faqs.php">FAQs</a></li>
+                                <li><a href="/contact-us.php">Contact Us</a></li>
+                            </ul>
+                            <a href="#" class="theme-btn-unique">Connect With Us</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner-sec -->
+    <section class="mainBanner">
+        <div class="content">
+            <h1>Get Robust Brand Protection with Trademark Registration</h1>
+            <p>Get Robust Brand Protection with Trademark Registration</p>
+            <a href="javascript:;" class="theme-btn popBtn" data-title="Trademark Registration" data-price="$35"
+                onclick="openModal(this);">Get Started</a>
+        </div>
+    </section>
+
+
+    <!-- Expertise Section -->
+    <section class="expertise-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h6 class="sub-head">Our Expertise</h6>
+                    <h2 class="main-head">Reliable Trademark Registration Solutions</h2>
+                    <p>With over a decade of expertise, we are dedicated to safeguarding businesses from the risks
+                        of trademark infringement.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="exp-card-custom">
+                        <h4>3k+</h4>
+                        <h6>Trademarked Businesses</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="exp-card-custom">
+                        <h4>1k+</h4>
+                        <h6>Satisfied Clients</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="exp-card-custom">
+                        <h4>800+</h4>
+                        <h6>Trademarked Logos</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plan -->
+    <section class="pricing-plan-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h6 class="sub-head">Pricing Plan</h6>
+                    <h2 class="main-head">Affordable Trademark Packages for All Businesses</h2>
+                </div>
+            </div>
+            <div class="row g-4"> <!-- Added g-4 for gaps between columns -->
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="price-wrap-custom">
+                        <div class="price-title">
+                            <h4>Trademark Registration</h4>
+                            <p>Ensure long-term success with our trusted trademark registration.</p>
+                        </div>
+                        <div class="price-rate">
+                            <h6>$35</h6>
+                            <span>+ USPTO filing fees</span>
+                        </div>
+                        <div class="price-features">
+                            <ul>
+                                <li>Quick and Easy Questionnaire</li>
+                                <li>Seamless Online Process</li>
+                                <li>24/7 Customer Support</li>
+                                <li>Free Consultancy</li>
+                                <li>Secure Online Access</li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="theme-btn pack-btn" data-title="Trademark Registration"
+                            data-price="$35" onclick="openModal(this);">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-wrap-custom">
+                        <div class="price-title">
+                            <h4>Trademark <br> Search</h4>
+                            <p>Uncover potential issues with our expert search service.</p>
+                        </div>
+                        <div class="price-rate">
+                            <h6>$49</h6>
+                        </div>
+                        <div class="price-features">
+                            <ul>
+                                <li>Save Time and Money</li>
+                                <li>Domestic and International Searches</li>
+                                <li>Comprehensive Custom PDF Report</li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="theme-btn pack-btn" data-title="Trademark Search" data-price="$49"
+                            onclick="openModal(this);">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="price-wrap-custom">
+                        <div class="price-title">
+                            <h4>Trademark Monitoring</h4>
+                            <p>Safeguard your brand with proactive trademark monitoring!</p>
+                        </div>
+                        <div class="price-rate">
+                            <h6>$175</h6>
+                        </div>
+                        <div class="price-features">
+                            <ul>
+                                <li>24/7 Monitoring and Support</li>
+                                <li>Advanced Monitoring Technology</li>
+                                <li>No Limits on Detections and Takedowns</li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="theme-btn pack-btn" data-title="Trademark Monitoring"
+                            data-price="$175" onclick="openModal(this);">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/793f608188.js" crossorigin="anonymous"></script>
+    <script src="../app.js"></script>
+    <script>
+        const menu_Bar = document.getElementById('menu-toggle-unique');
+        const mobileMenu = document.getElementById('mobile-nav-unique');
+
+        menu_Bar.addEventListener('click', () => {
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none'; // Hide the menu
+            } else {
+                mobileMenu.style.display = 'block'; // Show the menu
+            }
+        });
+    </script>
 </body>
+
 </html>

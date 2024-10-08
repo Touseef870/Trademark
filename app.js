@@ -26,8 +26,4 @@ window.onkeydown = function(event) {
     }
 };
 
-const menu_Bar = document.getElementById('menu-toggle-unique');
-menu_Bar.addEventListener('click', ()=> {
-    const menu = document.getElementById('mobile-nav-unique');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block' ;
-}); 
+ 
