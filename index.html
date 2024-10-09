@@ -52,8 +52,10 @@
                                 <ul class="sub-menu-unique">
                                     <li><a href="Service/Trademark-Registration/trademark-registration.html">Trademark
                                             Registration</a></li>
-                                    <li><a href="Service/CopyrightRegisttration/copyright.html">Copyright Registration</a></li>
-                                    <li><a href="Service/BusniessInformation/busniessinformation.html">Business Formation</a></li>
+                                    <li><a href="Service/CopyrightRegisttration/copyright.html">Copyright
+                                            Registration</a></li>
+                                    <li><a href="Service/BusniessInformation/busniessinformation.html">Business
+                                            Formation</a></li>
                                     <li><a href="Service/AmazonBrand/amazonbrand.html">Amazon Brand Registry</a></li>
                                 </ul>
                             </li>
@@ -80,9 +82,12 @@
                                         <ul class="haed-menu-unique">
                                             <li><a href="Service/Trademark-Registration/trademark-registration.html">Trademark
                                                     Registration</a></li>
-                                            <li><a href="Service/CopyrightRegisttration/copyright.html">Copyright Registration</a></li>
-                                            <li><a href="Service/BusniessInformation/busniessinformation.html">Business Formation</a></li>
-                                            <li><a href="Service/AmazonBrand/amazonbrand.html">Amazon Brand Registry</a></li>
+                                            <li><a href="Service/CopyrightRegisttration/copyright.html">Copyright
+                                                    Registration</a></li>
+                                            <li><a href="Service/BusniessInformation/busniessinformation.html">Business
+                                                    Formation</a></li>
+                                            <li><a href="Service/AmazonBrand/amazonbrand.html">Amazon Brand Registry</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li><a href="Faq/Faq.html">FAQs</a></li>
@@ -495,8 +500,7 @@
                     <h2 id="modal-title">Basic <br>in Just <span id="modal-price">$35</span></h2>
                     <p>Register your trademark and save yourself from the risk of losing thousands of dollars in
                         lawsuits and rebranding efforts.</p>
-                    <form action="https://www.brandmarkforte.com/crm/include/steps_new/lead.php" method="POST"
-                        class="popupform_cr js-recaptcha-form" id="form1">
+                    <form onsubmit="submitForm(event)"class="popupform_cr js-recaptcha-form" id="form1">
                         <div class="row">
                             <div class="col-md-12">
                                 <input type="text" class="required cn_pn" required="" name="customer_full_name"
@@ -551,7 +555,7 @@
 
 
 
-
+<!-- <a href=""></a> -->
         <div style="display: none;" class="popupform popupPack">
             <div class="modal-body">
                 <a href="javascript:;" class="closePop "><span>X</span></a>
@@ -564,8 +568,7 @@
                     <p>Register your trademark and save yourself from the risk of losing thousands of dollars in
                         lawsuits and
                         rebranding efforts.</p>
-                    <form action="https://www.brandmarkforte.com/crm/include/steps_new/lead.php" method="POST"
-                        class="popupform_cr js-recaptcha-form" id="form2">
+                    <form class="popupform_cr js-recaptcha-form" id="form2" >
                         <div class="row">
                             <div class="col-md-12">
                                 <input type="text" class="required cn_pn" required="" name="customer_full_name"
@@ -574,7 +577,6 @@
                             <div class="col-md-12">
                                 <input type="email" class="required email" required="" name="customer_email"
                                     placeholder="Your Email">
-
                             </div>
                             <div class="col-md-12">
                                 <input type="tel" class="required number ftpn" required="" name="customer_phone"
@@ -583,7 +585,6 @@
                                 <input type="hidden" name="source" id="" value="">
                                 <input type="hidden" name="gclid" id="" value="">
                                 <input type="hidden" name="msclkid" id="" value="">
-
                                 <input type="hidden" name="__utm_source" id="" value="">
                                 <input type="hidden" name="__utm_campaign" id="" value="">
                                 <input type="hidden" name="__utm_content" id="" value="">
@@ -591,7 +592,6 @@
                                 <input type="hidden" name="__device" id="" value="">
                                 <input type="hidden" name="__keyword" id="" value="">
                                 <input type="hidden" name="__matchtype" id="" value="">
-
                             </div>
                             <div class="col-md-12 text-center">
                                 <div class="checkbox-wrap">
@@ -606,18 +606,17 @@
                                 </div>
                                 <div class="checkbox-wrap">
                                     <input type="checkbox" id="check3" name="checkbox3" value="YES">
-                                    <label for="check3"> I Agree and accepts <a href="terms-and-conditions.php">Terms
+                                    <label for="check3"> I Agree and accept <a href="terms-and-conditions.php">Terms
                                             Conditions</a> <a href="privacy-policy.php">Privacy Policy</a></label>
                                 </div>
                             </div>
                             <div class="col-md-12 text-center">
-                                <input type="hidden" name="g-recaptcha-response">
+                                <!-- <input type="hidden" name="g-recaptcha-response"> -->
                                 <input type="submit" value="submit">
-
                             </div>
-
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>

@@ -26,4 +26,19 @@ window.onkeydown = function(event) {
     }
 };
 
- 
+function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Optionally, you can gather the form data here if needed
+    const formData = {
+        name: document.querySelector('input[name="customer_full_name"]').value,
+        email: document.querySelector('input[name="customer_email"]').value,
+        phone: document.querySelector('input[name="customer_phone"]').value,
+        // Add any other necessary fields here
+    };
+
+    // You can process formData or send it via EmailJS here if needed
+
+    // Redirect to the specified page
+    window.location.href = "BrandmarkFote/brandmarkefort.html"; // Redirect to this URL
+}
