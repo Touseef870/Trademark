@@ -27,7 +27,7 @@ h2 {
 .container {
     padding: 3rem;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: var(--white);
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -159,4 +159,8 @@ button[type="button"] {
     &:hover {
         background-color: #17a6ff;
     }
+}
+
+#modal{
+    display: none;
 }

@@ -1,82 +1,119 @@
 let currentStep = 1;
+const totalSteps = 7; // Update this to reflect total steps including payment
+let packagePrice = 0; // Variable to store the package price
+
+function showStep(step) {
+    for (let i = 1; i <= totalSteps; i++) {
+        document.getElementById(`step-${i}`).classList.remove('active');
+    }
+    document.getElementById(`step-${step}`).classList.add('active');
+}
 
 function nextStep(step) {
-    const currentFormStep = document.getElementById(`step-${currentStep}`);
-    const nextFormStep = document.getElementById(`step-${step}`);
-
-    // Check if the current step's inputs are valid
-    if (!validateCurrentStep(currentStep)) {
-        const inputs = document.querySelectorAll(`#step-${step} input[required]`);
-        if (!Array.from(inputs).every(input => input.value.trim() !== "")) {
-            // Show the modal if validation fails
-            const modal = new bootstrap.Modal(document.getElementById('requiredFieldsModal'));
-            modal.show();
-            return false;
-        }
-        return true;
+    if (validateStep(currentStep)) {
+        currentStep = step;
+        showStep(currentStep);
     }
+}
 
-    currentFormStep.classList.remove('active');
-    nextFormStep.classList.add('active');
+function prevStep(step) {
     currentStep = step;
+    showStep(currentStep);
+}
 
-    // Update the review content on step change
-    if (currentStep === 6) {
-        updateReviewContent();
+function validateStep(step) {
+    const formStep = document.getElementById(`step-${step}`);
+    const inputs = formStep.querySelectorAll('input[required], textarea[required]');
+    let isValid = true;
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            isValid = false;
+            input.classList.add('is-invalid');
+        } else {
+            input.classList.remove('is-invalid');
+        }
+    });
+
+    return isValid;
+}
+
+// New function to update the payment amount based on selected package
+function updatePaymentAmount() {
+    const selectedPackage = document.querySelector('input[name="package"]:checked');
+    if (selectedPackage) {
+        switch (selectedPackage.value) {
+            case 'basic':
+                packagePrice = 35; // Package price
+                break;
+            case 'standard':
+                packagePrice = 135; // Package price
+                break;
+            case 'premium':
+                packagePrice = 225; // Package price
+                break;
+            default:
+                packagePrice = 0; // Default to 0
+        }
+        document.getElementById('totalAmount').textContent = packagePrice; // Update the total amount display
     }
 }
 
-function validateCurrentStep(step) {
-    const inputs = document.querySelectorAll(`#step-${step} input[required], #step-${step} textarea[required]`);
-    return Array.from(inputs).every(input => input.value.trim() !== "");
-}
+// Add event listeners to update the payment amount when a package is selected
+const packageRadios = document.querySelectorAll('input[name="package"]');
+packageRadios.forEach(radio => {
+    radio.addEventListener('change', updatePaymentAmount);
+});
 
-function updateReviewContent() {
-    const reviewContent = document.getElementById("reviewContent");
-    reviewContent.innerHTML = `
-                <h4>Your Information:</h4>
-                <p><strong>Mark Name:</strong> ${document.getElementById("markName").value}</p>
-                <p><strong>Ownership Type:</strong> ${document.querySelector('input[name="ownershipType"]:checked').value}</p>
-                <p><strong>First Name:</strong> ${document.getElementById("firstName").value}</p>
-                <p><strong>Last Name:</strong> ${document.getElementById("lastName").value}</p>
-                <p><strong>Country:</strong> ${document.getElementById("country").value}</p>
-                <p><strong>Address:</strong> ${document.getElementById("address").value}</p>
-                <p><strong>City:</strong> ${document.getElementById("city").value}</p>
-                <p><strong>State:</strong> ${document.getElementById("state").value}</p>
-                <p><strong>Zip:</strong> ${document.getElementById("zip").value}</p>
-                <p><strong>Phone:</strong> ${document.getElementById("phone").value}</p>
-                <p><strong>Email:</strong> ${document.getElementById("email").value}</p>
-                <p><strong>Description:</strong> ${document.getElementById("description").value}</p>
-                <p><strong>Search Type:</strong> ${document.querySelector('input[name="searchType"]:checked').value}</p>
-                <p><strong>Package:</strong> ${document.querySelector('input[name="package"]:checked').value}</p>
-            `;
-}
+document.getElementById('registrationForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (validateStep(currentStep)) {
+        // Collect form data
+        const formData = {
+            markName: document.getElementById("markName").value,
+            ownershipType: document.querySelector('input[name="ownershipType"]:checked').value,
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            country: document.getElementById("country").value,
+            address: document.getElementById("address").value,
+            city: document.getElementById("city").value,
+            state: document.getElementById("state").value,
+            zip: document.getElementById("zip").value,
+            phone: document.getElementById("phone").value,
+            email: document.getElementById("email").value,
+            description: document.getElementById("description").value,
+            searchType: document.querySelector('input[name="searchType"]:checked').value,
+            package: document.querySelector('input[name="package"]:checked').value,
+            processingSpeed: document.querySelector('input[name="processingSpeed"]:checked').value,
+            termsAccepted: document.getElementById("terms").checked,
+            cardNumber: document.getElementById("cardNumber").value,
+            cardMM: document.getElementById("cardMM").value,
+            cardYY: document.getElementById("cardYY").value,
+            cardCVC: document.getElementById("cardCVC").value,
+            pakegePrice: document.getElementById("totalAmount").value,
+            
+        };
 
-function submitForm() {
-    const formData = {
-        markName: document.getElementById("markName").value,
-        ownershipType: document.querySelector('input[name="ownershipType"]:checked').value,
-        firstName: document.getElementById("firstName").value,
-        lastName: document.getElementById("lastName").value,
-        country: document.getElementById("country").value,
-        address: document.getElementById("address").value,
-        city: document.getElementById("city").value,
-        state: document.getElementById("state").value,
-        zip: document.getElementById("zip").value,
-        phone: document.getElementById("phone").value,
-        email: document.getElementById("email").value,
-        description: document.getElementById("description").value,
-        searchType: document.querySelector('input[name="searchType"]:checked').value,
-        package: document.querySelector('input[name="package"]:checked').value
-    };
-
-    // Send the email using Email.js
-    emailjs.send("service_dmhl49c", "template_glih28d", formData)
-        .then(function (response) {
-            console.log("SUCCESS!", response.status, response.text);
-            alert("Your application has been submitted and emailed!");
-        }, function (error) {
-            console.log("FAILED...", error);
-            alert("There was an issue submitting your application. Please try again later.");
+        console.log(formData);
+        Swal.fire({
+            icon: 'success',
+            title: 'Your Payment Successful',
+            text: 'Thanks You.',
+            confirmButtonText: 'OK'
         });
-}
+
+        // emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+        //     .then((response) => {
+        //         console.log("Success!", response.status, response.text);
+        //         alert("Your form has been submitted successfully!");
+        //         // Optionally, reset the form or show a success message
+        //         document.getElementById('registrationForm').reset();
+        //         showStep(1); // Reset to step 1
+        //         currentStep = 1;
+        //     }, (error) => {
+        //         console.error("Failed to send form", error);
+        //         alert("There was an error sending your form. Please try again.");
+        //     });
+    }
+});
+
