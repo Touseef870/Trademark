@@ -107,7 +107,7 @@ header {
 }
 
 .theme-btn-unique:hover {
-    color: #e65c00;
+    color: #277aad;
     background: #fff;
     border: 1px solid black;
 }
@@ -493,7 +493,7 @@ p {
 }
 
 .btn-custom:hover {
-    background-color: #e65c00;
+    background-color: #277aad;
     color: #fff;
 }
 
