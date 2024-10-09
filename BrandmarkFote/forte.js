@@ -90,7 +90,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
             cardMM: document.getElementById("cardMM").value,
             cardYY: document.getElementById("cardYY").value,
             cardCVC: document.getElementById("cardCVC").value,
-            pakegePrice: document.getElementById("totalAmount").value,
+            pakegePrice: document.getElementById("totalAmount").textContent,
             
         };
 
@@ -116,4 +116,5 @@ document.getElementById('registrationForm').addEventListener('submit', function 
             });
     }
 });
+
 
