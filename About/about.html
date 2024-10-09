@@ -53,8 +53,10 @@
                                 <ul class="sub-menu-unique">
                                     <li><a href="../Service/Trademark-Registration/trademark-registration.html">Trademark
                                             Registration</a></li>
-                                    <li><a href="../Service/CopyrightRegisttration/copyright.html">Copyright Registration</a></li>
-                                    <li><a href="../Service/BusniessInformation/busniessinformation.html">Business Formation</a></li>
+                                    <li><a href="../Service/CopyrightRegisttration/copyright.html">Copyright
+                                            Registration</a></li>
+                                    <li><a href="../Service/BusniessInformation/busniessinformation.html">Business
+                                            Formation</a></li>
                                     <li><a href="../Service/AmazonBrand/amazonbrand.html">Amazon Brand Registry</a></li>
                                 </ul>
                             </li>
@@ -81,9 +83,12 @@
                                         <ul class="haed-menu-unique">
                                             <li><a href="../Service/Trademark-Registration/trademark-registration.html">Trademark
                                                     Registration</a></li>
-                                            <li><a href="../Service/CopyrightRegisttration/copyright.html">Copyright Registration</a></li>
-                                            <li><a href="../Service/BusniessInformation/busniessinformation.html">Business Formation</a></li>
-                                            <li><a href="../Service/AmazonBrand/amazonbrand.html">Amazon Brand Registry</a></li>
+                                            <li><a href="../Service/CopyrightRegisttration/copyright.html">Copyright
+                                                    Registration</a></li>
+                                            <li><a href="../Service/BusniessInformation/busniessinformation.html">Business
+                                                    Formation</a></li>
+                                            <li><a href="../Service/AmazonBrand/amazonbrand.html">Amazon Brand
+                                                    Registry</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="../Faq/Faq.html">FAQs</a></li>
@@ -450,8 +455,7 @@
                     <h2 id="modal-title">Basic <br>in Just <span id="modal-price">$35</span></h2>
                     <p>Register your trademark and save yourself from the risk of losing thousands of dollars in
                         lawsuits and rebranding efforts.</p>
-                    <form action="https://www.brandmarkforte.com/crm/include/steps_new/lead.php" method="POST"
-                        class="popupform_cr js-recaptcha-form" id="form1">
+                    <form onsubmit="submitForm(event)" class="popupform_cr js-recaptcha-form" id="form1">
                         <div class="row">
                             <div class="col-md-12">
                                 <input type="text" class="required cn_pn" required="" name="customer_full_name"
@@ -519,8 +523,7 @@
                     <p>Register your trademark and save yourself from the risk of losing thousands of dollars in
                         lawsuits and
                         rebranding efforts.</p>
-                    <form action="https://www.brandmarkforte.com/crm/include/steps_new/lead.php" method="POST"
-                        class="popupform_cr js-recaptcha-form" id="form2">
+                    <form onsubmit="submitForm(event)" class="popupform_cr js-recaptcha-form" id="form2">
                         <div class="row">
                             <div class="col-md-12">
                                 <input type="text" class="required cn_pn" required="" name="customer_full_name"
@@ -623,6 +626,53 @@
                 });
 
             });
+
+            // Modal
+            function openModal(button) {
+                const title = button.getAttribute('data-title');
+                const price = button.getAttribute('data-price');
+                document.getElementById('modal-title').innerHTML = title + ' <br>in Just <span>' + price + '</span>';
+                document.getElementById('popupform_cr').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('popupform_cr').style.display = 'none';
+            }
+
+            document.getElementById('formClose').addEventListener('click', function () {
+                closeModal();
+            });
+
+            window.onclick = function (event) {
+                const modal = document.getElementById('popupform_cr');
+                if (event.target === modal) {
+                    closeModal();
+                }
+            };
+
+            window.onkeydown = function (event) {
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            };
+
+            function submitForm(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Optionally, you can gather the form data here if needed
+                const formData = {
+                    name: document.querySelector('input[name="customer_full_name"]').value,
+                    email: document.querySelector('input[name="customer_email"]').value,
+                    phone: document.querySelector('input[name="customer_phone"]').value,
+                    // Add any other necessary fields here
+                };
+
+                // You can process formData or send it via EmailJS here if needed
+
+                // Redirect to the specified page
+                window.location.href = "../BrandmarkFote/brandmarkefort.html"; // Redirect to this URL
+            }
+
         </script>
 
         <style>

@@ -102,18 +102,18 @@ document.getElementById('registrationForm').addEventListener('submit', function 
             confirmButtonText: 'OK'
         });
 
-        // emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
-        //     .then((response) => {
-        //         console.log("Success!", response.status, response.text);
-        //         alert("Your form has been submitted successfully!");
-        //         // Optionally, reset the form or show a success message
-        //         document.getElementById('registrationForm').reset();
-        //         showStep(1); // Reset to step 1
-        //         currentStep = 1;
-        //     }, (error) => {
-        //         console.error("Failed to send form", error);
-        //         alert("There was an error sending your form. Please try again.");
-        //     });
+        emailjs.send("service_dmhl49c","template_glih28d", formData)
+            .then((response) => {
+                console.log("Success!", response.status, response.text);
+                alert("Your form has been submitted successfully!");
+                // Optionally, reset the form or show a success message
+                document.getElementById('registrationForm').reset();
+                showStep(1); // Reset to step 1
+                currentStep = 1;
+            }, (error) => {
+                console.error("Failed to send form", error);
+                alert("There was an error sending your form. Please try again.");
+            });
     }
 });
 
