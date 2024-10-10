@@ -994,6 +994,97 @@ p {
     opacity: 0.5;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .heading-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .sub-heading {
+        font-size: 1.3rem; /* Adjusted size for clarity */
+    }
+
+    .testimonial-box {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack the image and text */
+        align-items: center; /* Center content */
+        text-align: center; /* Center the text */
+    }
+    
+    .user-img {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 1rem; /* Add space below the image */
+    }
+
+    .quote {
+        font-size: 1.4rem; /* Slightly reduced for better fit */
+    }
+
+    .name {
+        font-size: 1.1rem; /* Adjust name size */
+    }
+
+    .position {
+        font-size: 0.9rem; /* Smaller position size */
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial-box {
+        padding: 1.5rem; /* Reduced padding for smaller screens */
+    }
+
+    .quote {
+        font-size: 1.2rem; /* Smaller font size for quotes */
+    }
+}
+
+@media (max-width: 768px) {
+    .heading-section h2 {
+        font-size: 1.6rem;
+    }
+    .sub-heading {
+        font-size: 1.1rem;
+    }
+    
+    .testimonial-box {
+        width: calc(100% - 1rem); /* Adjust width */
+    }
+
+    .quote {
+        font-size: 1.1rem; /* Further reduce quote size */
+    }
+
+    .name {
+        font-size: 1.1rem; /* Adjust name size */
+    }
+
+    .position {
+        font-size: 0.9rem; /* Smaller position size */
+    }
+}
+
+@media (max-width: 576px) {
+    .heading-section h2 {
+        font-size: 1.4rem;
+    }
+    .testimonial-box {
+        padding: 1rem; /* Further reduce padding */
+    }
+
+    .quote {
+        font-size: 1rem; /* Reduce quote font size */
+    }
+
+    .name {
+        font-size: 1rem; /* Adjust name size */
+    }
+
+    .position {
+        font-size: 0.8rem; /* Adjust position size */
+    }
+}
+
 
 /* Contact Us Section */
 .contact-us {
