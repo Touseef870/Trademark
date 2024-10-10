@@ -95,18 +95,18 @@ document.getElementById('registrationForm').addEventListener('submit', function 
         };
 
         console.log(formData);
-        Swal.fire({
-            icon: 'success',
-            title: 'Your Payment Successful',
-            text: 'Thanks You.',
-            confirmButtonText: 'OK'
-        });
+       
 
         emailjs.send("service_dmhl49c","template_glih28d", formData)
             .then((response) => {
                 console.log("Success!", response.status, response.text);
-                alert("Your form has been submitted successfully!");
-                // Optionally, reset the form or show a success message
+                // alert("Your form has been submitted successfully!");
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Your Payment Successful',
+                    text: 'Thanks You.',
+                    confirmButtonText: 'OK'
+                });
                 document.getElementById('registrationForm').reset();
                 showStep(1); // Reset to step 1
                 currentStep = 1;
