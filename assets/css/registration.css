@@ -704,6 +704,7 @@ p {
 .cta-btn:hover {
     background-color: #357bb8;
     transform: translateY(-3px);
+    color: #fff;
 }
 
 /* Process Right (Steps) */
